@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMG-20230924-WA0033_2.jpg);
+    background-size:cover;
+    background-position: center;
+} 
+
+.container{
+    padding: 5px 5%;
+}
+.nav{
+    /* display:inline-table; */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 440px;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    position: relative;
+}
+a.active,a:hover{
+    background:blue;
+    transition: 0.5s;
+    width: 0;
+    height: 3px;
+    /* bottom: -6px; */
+}
+.headertext{
+    margin-top: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+#about{
+    padding: 25px 2;
+    color: white;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.one{
+    padding: 5px;
+    margin-left: 2px;
+    border-radius: 35px;
+    width: 30px;
+    height: 20px;
+}
+h1{
+    font-weight: 200;
+    margin-right: 5px;
+    color: aqua; 
+}
+.two{
+    font-weight: 200;
+}
+/* p{
+    align-items: end;
+    
+} */
+#PORT{
+    padding: 50px 0;
+    width: 100%;
+    height: 70vh;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px 1fr));
+    grid-gap: 10px;
+    margin-top: 2px;
+    color: white;
+}
+h2{
+    color: white;
+}
+.service div p{
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.service div{
+    background: grey;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+a{
+    color: white;
+}
+#pfolio{
+    padding: 40px 0;
+    width: 100%;
+    height: 100px;
+}
+.pfoliolist{ 
+    display:flex; 
+    flex-wrap: wrap;
+    padding: 10px 4px;
+    justify-content: space-between;
+
+}.work{
+    border-radius: 10px;
+    position: relative;
+}
+.work img{
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    transition:transform 0.5s;
+}
+h3{
+    color: white;
+    font-size: medium;
+}
+p{
+    color: white;
+    font-size: medium;
+}
+.cont{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.075),#4a4848);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .cont{
+    height: 100%;
+}
+#contact{
+    padding: 500px 0;
+    width: 100%;
+    height: 70vh;
+
+}
+.contactl{
+    flex-basis: 30%;
+} 
+.contactr{
+    flex-basis: 50%;
+}
+.contactl p{
+    margin-top: 40px;
+
+}
+.contactl p i{
+    color: #4a4848;
+}
+.sociali{
+    margin-top: 30px;
+}
+.sociali a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #4a4848;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.sociali a :hover{
+    color: grey;
+    transform: translate(-5px);
+
+}
+.btn btn2{
+    display: inline-block;
+    background: #4a4848;
+}
+.contactr form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background-color: #4a4848;
+    margin: 15px 0;
+    color: black;
+    font-size: medium;
+    border-radius: 8px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: gray;
+    font-weight: 300;
+    margin-top: 10px;
+}
+nav.fas{
+    display: block;
+}
+@media only screen and (max-width:1000px){
+    nav.fas{
+        display:block;
+        font-size:25px; 
+    }
+
+}
